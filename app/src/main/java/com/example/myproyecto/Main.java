@@ -15,7 +15,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class Main extends AppCompatActivity implements OnMapReadyCallback {
 
-    private GoogleMap Mapa;
+    private GoogleMap Map;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +28,12 @@ public class Main extends AppCompatActivity implements OnMapReadyCallback {
 
 
     public void onMapReady(GoogleMap googleMap) {
-        Mapa = googleMap;
+        Map = googleMap;
 
 
         LatLng calama = new LatLng(-22.4566708, -68.9237137);
-        Mapa.addMarker(new MarkerOptions().position(calama).title("Calama"));
-        Mapa.moveCamera(CameraUpdateFactory.newLatLng(calama));
+        Map.addMarker(new MarkerOptions().position(calama).title("Calama"));
+        Map.moveCamera(CameraUpdateFactory.newLatLng(calama));
     }
 
     @Override
