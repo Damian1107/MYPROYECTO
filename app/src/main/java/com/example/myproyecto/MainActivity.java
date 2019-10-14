@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         Mapa = googleMap;
 
-        //Añadir marcador en El Salvador y mover la cámara.
-        LatLng elsalvador = new LatLng(-26.25, -69.616667);
-        Mapa.addMarker(new MarkerOptions().position(elsalvador).title("Marcador en El Salvador"));
-        Mapa.moveCamera(CameraUpdateFactory.newLatLng(elsalvador));
+
+        LatLng calama = new LatLng(-22.4566708, -68.9237137);
+        Mapa.addMarker(new MarkerOptions().position(calama).title("Marcador en El Salvador"));
+        Mapa.moveCamera(CameraUpdateFactory.newLatLng(calama));
     }
 
     @Override
