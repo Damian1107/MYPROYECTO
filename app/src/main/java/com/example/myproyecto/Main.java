@@ -10,6 +10,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -34,6 +35,12 @@ public class Main extends AppCompatActivity implements OnMapReadyCallback {
         LatLng calama = new LatLng(-22.4566708, -68.9237137);
         Map.addMarker(new MarkerOptions().position(calama).title("Calama"));
         Map.moveCamera(CameraUpdateFactory.newLatLng(calama));
+        CameraPosition cameraPosition = CameraPosition.builder()
+                .target(calama)
+                .zoom(16)
+                .build();
+
+        googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
     }
 
     @Override
