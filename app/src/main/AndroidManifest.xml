@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.a101019">
+    package="com.example.MYPROYECTO">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -20,9 +20,9 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBovX6n_b5jJ-kcLoJxHtVTch7bQcyDAvw" />
+            android:value="AIzaSyBCveY3tYERhOitYcEBRwfkkarDDrpocjA" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".Main">
             android:label="Map">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,7 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.a101019.R;
+
+import com.example.MYPROYECTO.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -12,7 +13,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
+public class Main extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap Mapa;
 
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         LatLng calama = new LatLng(-22.4566708, -68.9237137);
-        Mapa.addMarker(new MarkerOptions().position(calama).title("Marcador en El Salvador"));
+        Mapa.addMarker(new MarkerOptions().position(calama).title("Calama"));
         Mapa.moveCamera(CameraUpdateFactory.newLatLng(calama));
     }
 
