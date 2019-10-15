@@ -37,7 +37,7 @@ public class Main extends AppCompatActivity implements OnMapReadyCallback {
         Map.moveCamera(CameraUpdateFactory.newLatLng(arica));
         CameraPosition cameraPosition = CameraPosition.builder()
                 .target(arica)
-                .zoom(16)
+                .zoom(15)
                 .build();
 
         googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
