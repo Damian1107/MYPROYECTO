@@ -32,11 +32,11 @@ public class Main extends AppCompatActivity implements OnMapReadyCallback {
         Map = googleMap;
 
 
-        LatLng calama = new LatLng(-22.4566708, -68.9237137);
-        Map.addMarker(new MarkerOptions().position(calama).title("Calama"));
-        Map.moveCamera(CameraUpdateFactory.newLatLng(calama));
+        LatLng arica = new LatLng(-18.4745998, -70.2979202);
+        Map.addMarker(new MarkerOptions().position(arica).title("Calama"));
+        Map.moveCamera(CameraUpdateFactory.newLatLng(arica));
         CameraPosition cameraPosition = CameraPosition.builder()
-                .target(calama)
+                .target(arica)
                 .zoom(16)
                 .build();
 
