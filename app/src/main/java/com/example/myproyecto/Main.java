@@ -33,7 +33,7 @@ public class Main extends AppCompatActivity implements OnMapReadyCallback {
 
 
         LatLng arica = new LatLng(-18.4745998, -70.2979202);
-        Map.addMarker(new MarkerOptions().position(arica).title("Calama"));
+        Map.addMarker(new MarkerOptions().position(arica).title("Arica"));
         Map.moveCamera(CameraUpdateFactory.newLatLng(arica));
         CameraPosition cameraPosition = CameraPosition.builder()
                 .target(arica)
